@@ -34,7 +34,7 @@ Installation
    ```
    # Windows
    python -m venv env
-   source env/Scripts/activate
+   env\Scripts\activate
    ```
 
    ```
@@ -63,15 +63,23 @@ Aplikasi ini menggunakan SQLite sebagai basis datanya. File database studify.db 
 
 Akun Admin Default
 -------------------
-- Username: admin
-- Password: admin123
+Username: admin
+Password: admin123
 
 Requirements
 -----------
 - Python 3.8+
-- Flask
-- Flask-SQLAlchemy
-- Flask-Login
-- Werkzeug
+- Flask 2.3.3
+- Flask-SQLAlchemy (<3.1.0)
+- SQLAlchemy (<2.0.0)
+- Flask-Migrate 4.0.5
+- Flask-Login 0.6.3
+- Flask-Bcrypt 0.7.1
+- Flask-WTF 0.15.1
+- Pillow 11.2.1
+- Email-Validator 1.1.3
+- Gunicorn 20.1.0
+- psycopg2-binary 2.9.10
+- WTForms 3.2.1
 
 Untuk daftar yang lebih lengkap, lihat requirements.txt
