@@ -34,7 +34,7 @@ Installation
    ```
    # Windows
    python -m venv env
-   env\Scripts\activate
+   Source env/Scripts/activate
    ```
 
    ```
