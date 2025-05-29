@@ -63,8 +63,8 @@ Aplikasi ini menggunakan SQLite sebagai basis datanya. File database studify.db 
 
 Akun Admin Default
 -------------------
-Username: admin
-Password: admin123
+- Username: admin
+- Password: admin123
 
 Requirements
 -----------
