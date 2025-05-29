@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Quiz Results</h3>
+            </div>
+            <div class="card-body text-center">
+                <h1 class="display-1 mb-4">{{ percentage }}%</h1>
+                <p class="lead">
+                    You scored {{ score }} out of {{ total }} questions correctly.
+                </p>
+                
+                <div class="progress mb-4" style="height: 30px;">
+                    <div class="progress-bar {% if percentage >= 70 %}bg-success{% elif percentage >= 40 %}bg-warning{% else %}bg-danger{% endif %}" 
+                         role="progressbar" 
+                         style="width: {{ percentage }}%"
+                         aria-valuenow="{{ percentage }}" 
+                         aria-valuemin="0" 
+                         aria-valuemax="100">
+                        {{ percentage }}%
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <a href="{{ url_for('quiz_list') }}" class="btn btn-primary">
+                        <i class="bi bi-list"></i> Back to Quizzes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
